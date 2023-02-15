@@ -6,7 +6,7 @@ export function getPercents(percent, number) {
       return "Процент не может быть больше ста.";
 
   if (number < 0)
-      return "Ожидается положительное число.";
+      return "Процент не может быть взят от отрицательного числа.";
 
   return (number * percent) / 100;
 }
